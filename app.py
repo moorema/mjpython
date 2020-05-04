@@ -243,9 +243,11 @@
 # # print(find_max(numbers))
 # maxnum = find_max(numbers)
 # print(maxnum)
-#
+#--------------包管理调用方法一----------------------
 # import ecommerce.shipping
 # ecommerce.shipping.calc_shipping()
-#
-from ecommerce.shipping import calc_shipping
-calc_shipping()
+#--------------包管理调用方法一----------------------
+#--------------包管理调用方法二一----------------------
+# from ecommerce.shipping import calc_shipping
+# calc_shipping()
+#--------------包管理调用方法二一----------------------
