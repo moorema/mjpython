@@ -238,7 +238,14 @@
 # mao.run()
 #----------------继承----------------------
 
-from utils import  find_max
-numbers = [ 1.,2,89,7854,54165,131]
-max = find_max(numbers)
-print(max)
+# from utils import  find_max
+# numbers = [ 109,2,89,7854,54100065,131]
+# # print(find_max(numbers))
+# maxnum = find_max(numbers)
+# print(maxnum)
+#
+# import ecommerce.shipping
+# ecommerce.shipping.calc_shipping()
+#
+from ecommerce.shipping import calc_shipping
+calc_shipping()
