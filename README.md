@@ -1,3 +1,2 @@
-# mjpython
-
-- python函数xuexi 
+# 学习Python
+- 2020-5-4学习面向对象概念，封装集成 
