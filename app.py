@@ -251,3 +251,32 @@
 # from ecommerce.shipping import calc_shipping
 # calc_shipping()
 #--------------包管理调用方法二一----------------------
+#
+# import random
+# # for i in range(3):
+# #     print(random.randint(10,20))
+# #
+# #
+# # members = ['john','Mary','Bob','Mosh']
+# # leader = random.choice(members)
+# # print(leader)
+#
+#
+# class Dice:
+#     def roll(self):
+#         first = random.randint(1, 6)
+#         second = random.randint(1, 6)
+#         return first, second
+#
+#
+# dice = Dice()
+# print(dice.roll())
+#---------------路径模块使用，历遍打印所有文件------------------------
+# from pathlib import Path
+#
+#
+# path = Path()
+# for file in path.glob('*'):
+#     print(file)
+#---------------路径模块使用，历遍打印所有文件------------------------
+
