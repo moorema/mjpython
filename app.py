@@ -275,8 +275,46 @@
 # from pathlib import Path
 #
 #
-# path = Path()
+# path = Path() 留空表示当前路径，可以填写绝对路径
 # for file in path.glob('*'):
 #     print(file)
 #---------------路径模块使用，历遍打印所有文件------------------------
 
+
+#------------------处理excel表格的程序----------------------------------------
+# import openpyxl as xl
+# from openpyxl.chart import BarChart, Reference
+# from pathlib import Path
+#
+# #表格处理函数
+# def process_workbook(filename):
+#     wb = xl.load_workbook(filename)
+#     sheet = wb['Sheet1']
+#     # # cell = sheet['a1']
+#     # cell = sheet.cell(1, 1)
+#     # # print(cell.value)
+#
+#     for row in range(2, sheet.max_row + 1):
+#         cell = sheet.cell(row, 3)
+#         corrected_price = cell.value * 0.9
+#         corrected_price_cell = sheet.cell(row, 4)
+#         corrected_price_cell.value = corrected_price
+#
+#     values = Reference(sheet,
+#               min_row=2,
+#               max_row=sheet.max_row,
+#               min_col=4,
+#               max_col=4
+#               )
+# #根据表格数据创建柱形图
+#     chart = BarChart()
+#     chart.add_data(values)
+#     sheet.add_chart(chart, 'f2')
+#     wb.save(filename)
+#
+# #查找当前路径下xlsx文件传入表格处理函数
+# path = Path()
+# for file in path.glob('*.xlsx'):
+#     print(file)
+# process_workbook(file)
+# #------------------处理excel表格的程序----------------------------------------
